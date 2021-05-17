@@ -14,3 +14,21 @@ def buildModel(dataset, method, parameters):
     """
     Build final model for predicting real testing data
     """
+    features = dataset.columns[0:-1]
+
+    if method == 'RNN':
+        clf = performRNNlass(dataset[features], dataset['UpDown'])
+        return clf
+
+    elif method == 'RF':
+        clf = RandomForestClassifier(n_estimators=1000, n_jobs=-1)
+
+    elif method == 'KNN':
+        clf = neighbors.KNeighborsClassifier()
+
+    elif method == 'SVM':
+        c = parameters[0]
+        g =  parameters[1]
+        clf = SVC(C=c, gamma=g)
+
+    elif method == 'ADA':
