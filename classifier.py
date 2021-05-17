@@ -32,3 +32,19 @@ def buildModel(dataset, method, parameters):
         clf = SVC(C=c, gamma=g)
 
     elif method == 'ADA':
+        clf = AdaBoostClassifier()
+
+    return clf.fit(dataset[features], dataset['UpDown'])
+
+def prepareDataForClassification(dataset, start_test):
+    """
+    generates categorical output column, attach to dataframe
+    label the categories and split into train and test
+    """
+    features = dataset.columns[0:-1]
+
+    X = dataset[features]
+    y = dataset.UpDown
+
+    X_train = X[X.index < start_test]
+    y_train = y[y.index < start_test]
