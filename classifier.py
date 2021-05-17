@@ -48,3 +48,24 @@ def prepareDataForClassification(dataset, start_test):
 
     X_train = X[X.index < start_test]
     y_train = y[y.index < start_test]
+
+    X_test = X[X.index >= start_test]
+    y_test = y[y.index >= start_test]
+
+    return X_train, y_train, X_test, y_test
+
+
+def performClassification(X_train, y_train, X_test, y_test, method, parameters, savemodel):
+    """
+    performs classification on returns using serveral algorithms
+    """
+    if method == 'RF':
+        return performRFClass(X_train, y_train, X_test, y_test, parameters, savemodel)
+
+    elif method == 'KNN':
+        return performKNNClass(X_train, y_train, X_test, y_test, parameters, savemodel)
+
+    elif method == 'SVM':
+        return performSVMClass(X_train, y_train, X_test, y_test, parameters, savemodel)
+
+    elif method == 'ADA':
