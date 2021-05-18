@@ -92,3 +92,19 @@ def performRFClass(X_train, y_train, X_test, y_test, parameters, savemodel):
 
 def performKNNClass(X_train, y_train, X_test, y_test, parameters, savemodel):
     """
+    KNN binary Classification
+    """
+    clf = neighbors.KNeighborsClassifier(parameters[0])
+    clf.fit(X_train, y_train)
+
+    accuracy = clf.score(X_test, y_test)
+
+    return accuracy
+
+def performSVMClass(X_train, y_train, X_test, y_test, parameters, savemodel):
+    """
+    SVM binary Classification
+    """
+    c = parameters[0]
+    g =  parameters[1]
+    clf = SVC(C=c, gamma=g)
