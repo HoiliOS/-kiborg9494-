@@ -69,3 +69,10 @@ def performClassification(X_train, y_train, X_test, y_test, method, parameters, 
         return performSVMClass(X_train, y_train, X_test, y_test, parameters, savemodel)
 
     elif method == 'ADA':
+        return performAdaBoostClass(X_train, y_train, X_test, y_test, parameters, savemodel)
+
+    elif method == 'RNN':
+        X_test = numpy.reshape(numpy.array(X_test), (X_test.shape[0], 1, X_test.shape[1]))
+
+        model = performRNNlass(X_train, y_train)
+        return model.evaluate(X_test, y_test)[1]
