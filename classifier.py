@@ -76,3 +76,19 @@ def performClassification(X_train, y_train, X_test, y_test, method, parameters, 
 
         model = performRNNlass(X_train, y_train)
         return model.evaluate(X_test, y_test)[1]
+
+####### Classifier Arsenal ####################################################
+
+def performRFClass(X_train, y_train, X_test, y_test, parameters, savemodel):
+    """
+    Random Forest Binary Classification
+    """
+    clf = RandomForestClassifier(n_estimators=1000, n_jobs=-1)
+    clf.fit(X_train, y_train)
+
+    accuracy = clf.score(X_test, y_test)
+
+    return accuracy
+
+def performKNNClass(X_train, y_train, X_test, y_test, parameters, savemodel):
+    """
