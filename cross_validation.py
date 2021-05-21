@@ -1,4 +1,6 @@
 import util
 import datetime
 
-def main(
+def main():
+
+    stock_n
