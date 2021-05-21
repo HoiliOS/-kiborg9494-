@@ -141,3 +141,13 @@ def performRNNlass(X_train, y_train):
         100,
         return_sequences=False))
     model.add(Dropout(0.2))
+
+    model.add(Dense(
+        units=1))
+    model.add(Activation('sigmoid'))
+
+    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+    model.fit(
+        X_train,
+        y_train,
