@@ -108,3 +108,21 @@ def performSVMClass(X_train, y_train, X_test, y_test, parameters, savemodel):
     c = parameters[0]
     g =  parameters[1]
     clf = SVC(C=c, gamma=g)
+    clf.fit(X_train, y_train)
+
+    accuracy = clf.score(X_test, y_test)
+
+    return accuracy
+
+def performAdaBoostClass(X_train, y_train, X_test, y_test, parameters, savemodel):
+    """
+    Ada Boosting binary Classification
+    """
+    # n = parameters[0]
+    # l =  parameters[1]
+    clf = AdaBoostClassifier()
+    clf.fit(X_train, y_train)
+
+    accuracy = clf.score(X_test, y_test)
+
+    return accuracy
