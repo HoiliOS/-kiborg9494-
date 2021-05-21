@@ -126,3 +126,18 @@ def performAdaBoostClass(X_train, y_train, X_test, y_test, parameters, savemodel
     accuracy = clf.score(X_test, y_test)
 
     return accuracy
+
+def performRNNlass(X_train, y_train):
+    X_train = numpy.reshape(numpy.array(X_train), (X_train.shape[0], 1, X_train.shape[1]))
+    model = Sequential()
+
+    model.add(LSTM(
+        128,
+        input_shape=(None, X_train.shape[2]),
+        return_sequences=True))
+    model.add(Dropout(0.2))
+
+    model.add(LSTM(
+        100,
+        return_sequences=False))
+    model.add(Dropout(0.2))
