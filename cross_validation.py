@@ -3,4 +3,5 @@ import datetime
 
 def main():
 
-    stock_n
+    stock_name = 'SPY'
+ 
