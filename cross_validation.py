@@ -6,4 +6,4 @@ def main():
     stock_name = 'SPY'
     method = 'KNN'
 
-    m
+    maxdeltas = 99 #
