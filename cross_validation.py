@@ -7,4 +7,6 @@ def main():
     method = 'KNN'
 
     maxdeltas = 99 # min is 3
-    folds = 
+    folds = 10
+
+    sta
