@@ -9,4 +9,4 @@ def main():
     maxdeltas = 99 # min is 3
     folds = 10
 
-    start = datetime.datet
+    start = datetime.datetime(2014,1,1)
