@@ -10,3 +10,4 @@ def main():
     folds = 10
 
     start = datetime.datetime(2014,1,1)
+    end = d
