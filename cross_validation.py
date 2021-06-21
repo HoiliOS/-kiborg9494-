@@ -13,4 +13,5 @@ def main():
     end = datetime.datetime(2015,12,31)
     start_test = datetime.datetime(2015,1,1)
 
-    # UNCOMMENT to do Feature sele
+    # UNCOMMENT to do Feature selection
+    # parame
