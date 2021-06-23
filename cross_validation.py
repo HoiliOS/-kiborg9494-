@@ -14,4 +14,5 @@ def main():
     start_test = datetime.datetime(2015,1,1)
 
     # UNCOMMENT to do Feature selection
-    # parameters = [16
+    # parameters = [16, 0.125]
+   
