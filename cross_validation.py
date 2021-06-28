@@ -15,4 +15,4 @@ def main():
 
     # UNCOMMENT to do Feature selection
     # parameters = [16, 0.125]
-    # util.performFeatureSelection(stock_name, maxdeltas
+    # util.performFeatureSelection(stock_name, maxdeltas, start, en
