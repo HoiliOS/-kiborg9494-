@@ -17,4 +17,4 @@ def main():
     # parameters = [16, 0.125]
     # util.performFeatureSelection(stock_name, maxdeltas, start, end, start_test, False, method, folds,  parameters)
 
-    #grid = {'c': [2**x for x in range(10, -2, -1)], 'g': [2**x 
+    #grid = {'c': [2**x for x in range(10, -2, -1)], 'g': [2**x for x in ra
