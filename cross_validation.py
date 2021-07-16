@@ -18,3 +18,4 @@ def main():
     # util.performFeatureSelection(stock_name, maxdeltas, start, end, start_test, False, method, folds,  parameters)
 
     #grid = {'c': [2**x for x in range(10, -2, -1)], 'g': [2**x for x in range(-15,1, 2)]}
+    grid 
