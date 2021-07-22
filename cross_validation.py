@@ -19,4 +19,4 @@ def main():
 
     #grid = {'c': [2**x for x in range(10, -2, -1)], 'g': [2**x for x in range(-15,1, 2)]}
     grid = {'k': range(3, 10)}
-    util.performParameterSelection(
+    util.performParameterSelection(stock_name, ma
