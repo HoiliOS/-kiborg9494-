@@ -19,4 +19,6 @@ def main():
 
     #grid = {'c': [2**x for x in range(10, -2, -1)], 'g': [2**x for x in range(-15,1, 2)]}
     grid = {'k': range(3, 10)}
-    util.performParameterSelection(stock_name, maxdeltas, start, end, start_test, False, method, fo
+    util.performParameterSelection(stock_name, maxdeltas, start, end, start_test, False, method, folds, grid)
+
+if __name
