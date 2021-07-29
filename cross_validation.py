@@ -21,4 +21,4 @@ def main():
     grid = {'k': range(3, 10)}
     util.performParameterSelection(stock_name, maxdeltas, start, end, start_test, False, method, folds, grid)
 
-if __name
+if __name__ == '__main__
