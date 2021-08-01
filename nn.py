@@ -1,1 +1,1 @@
-from keras.layers.core import Dens
+from keras.layers.core import Dense, Activation, Dr
