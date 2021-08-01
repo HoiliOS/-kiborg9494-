@@ -1,1 +1,2 @@
-from keras.layers.core import Dense, Activation, Dr
+from keras.layers.core import Dense, Activation, Dropout
+from ker
