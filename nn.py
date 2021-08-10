@@ -3,4 +3,5 @@ from keras.layers.recurrent import LSTM
 from keras.models import Sequential
 import numpy
 import time
-import ut
+import util
+import 
