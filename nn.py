@@ -10,4 +10,5 @@ import datetime
 def main():
 
     stock_name = 'SPY'
-    delta =
+    delta = 4
+    start = 
