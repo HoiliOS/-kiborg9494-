@@ -9,4 +9,5 @@ import datetime
 
 def main():
 
-    stock_name = '
+    stock_name = 'SPY'
+    delta =
