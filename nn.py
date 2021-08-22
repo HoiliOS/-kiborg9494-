@@ -9,4 +9,4 @@ import datetime
 
 def main():
 
-    st
+    stock_name = '
