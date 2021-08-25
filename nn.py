@@ -12,4 +12,4 @@ def main():
     stock_name = 'SPY'
     delta = 4
     start = datetime.datetime(2010,1,1)
-    end = datetime.dat
+    end = datetime.datetime(2015,
