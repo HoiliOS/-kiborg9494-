@@ -15,4 +15,4 @@ def main():
     end = datetime.datetime(2015,12,31)
     start_test = datetime.datetime(2015,1,1)
 
-    datase
+    dataset = util.g
