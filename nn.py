@@ -15,4 +15,5 @@ def main():
     end = datetime.datetime(2015,12,31)
     start_test = datetime.datetime(2015,1,1)
 
-    dataset = util.get_data(stock_n
+    dataset = util.get_data(stock_name, start, end)
+ 
