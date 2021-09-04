@@ -16,4 +16,4 @@ def main():
     start_test = datetime.datetime(2015,1,1)
 
     dataset = util.get_data(stock_name, start, end)
-    delta = r
+    delta = range(
