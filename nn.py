@@ -17,4 +17,5 @@ def main():
 
     dataset = util.get_data(stock_name, start, end)
     delta = range(1, delta)
-    dataset = util.applyFeatures(dataset
+    dataset = util.applyFeatures(dataset, delta)
+    
