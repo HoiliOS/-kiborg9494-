@@ -19,4 +19,5 @@ def main():
     delta = range(1, delta)
     dataset = util.applyFeatures(dataset, delta)
     dataset = util.preprocessData(dataset)
-    X_train, y_train, X_tes
+    X_train, y_train, X_test, y_test  = \
+      
