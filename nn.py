@@ -20,4 +20,6 @@ def main():
     dataset = util.applyFeatures(dataset, delta)
     dataset = util.preprocessData(dataset)
     X_train, y_train, X_test, y_test  = \
-        classifier.prepareDataForClassification(dataset, start_t
+        classifier.prepareDataForClassification(dataset, start_test)
+
+  
