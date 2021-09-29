@@ -22,4 +22,4 @@ def main():
     X_train, y_train, X_test, y_test  = \
         classifier.prepareDataForClassification(dataset, start_test)
 
-    X_train = numpy.reshape(numpy.array(X_train), (X_train.shape[0], 1, X_tr
+    X_train = numpy.reshape(numpy.array(X_train), (X_train.shape[0], 1, X_train.shape[1])
