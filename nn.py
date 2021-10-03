@@ -24,4 +24,4 @@ def main():
 
     X_train = numpy.reshape(numpy.array(X_train), (X_train.shape[0], 1, X_train.shape[1]))
 
-    X_test = numpy.reshape(numpy.array(X_test), (X_test.shape[0], 1
+    X_test = numpy.reshape(numpy.array(X_test), (X_test.shape[0], 1, X_test.
