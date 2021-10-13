@@ -27,4 +27,4 @@ def main():
     X_test = numpy.reshape(numpy.array(X_test), (X_test.shape[0], 1, X_test.shape[1]))
 
     #Step 2 Build Model
-    model 
+    model = Sequen
