@@ -29,4 +29,5 @@ def main():
     #Step 2 Build Model
     model = Sequential()
 
-    mode
+    model.add(LSTM(
+  
