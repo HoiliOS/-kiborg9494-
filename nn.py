@@ -30,4 +30,5 @@ def main():
     model = Sequential()
 
     model.add(LSTM(
+        128,
   
