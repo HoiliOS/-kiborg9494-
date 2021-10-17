@@ -31,4 +31,4 @@ def main():
 
     model.add(LSTM(
         128,
-  
+        input_
