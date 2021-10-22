@@ -32,4 +32,4 @@ def main():
     model.add(LSTM(
         128,
         input_shape=(None, X_train.shape[2]),
-  
+        return_s
