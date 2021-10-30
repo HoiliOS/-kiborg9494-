@@ -35,4 +35,5 @@ def main():
         return_sequences=True))
     model.add(Dropout(0.2))
 
-    model.add(LSTM
+    model.add(LSTM(
+        240
