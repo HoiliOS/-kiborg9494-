@@ -36,4 +36,5 @@ def main():
     model.add(Dropout(0.2))
 
     model.add(LSTM(
-        240
+        240,
+       
