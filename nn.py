@@ -37,4 +37,5 @@ def main():
 
     model.add(LSTM(
         240,
-        return_sequences=Fal
+        return_sequences=False))
+  
