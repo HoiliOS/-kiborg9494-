@@ -40,4 +40,4 @@ def main():
         return_sequences=False))
     model.add(Dropout(0.2))
 
-    m
+    model.add(Dense(
