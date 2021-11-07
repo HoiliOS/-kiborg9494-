@@ -42,4 +42,4 @@ def main():
 
     model.add(Dense(
         units=1))
-    
+    model.add(A
