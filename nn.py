@@ -44,4 +44,4 @@ def main():
         units=1))
     model.add(Activation('sigmoid'))
 
-    sta
+    start = time.time()
