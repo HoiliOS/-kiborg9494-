@@ -45,4 +45,4 @@ def main():
     model.add(Activation('sigmoid'))
 
     start = time.time()
-    mode
+    model.compile(loss='
