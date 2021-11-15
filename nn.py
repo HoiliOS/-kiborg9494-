@@ -45,4 +45,4 @@ def main():
     model.add(Activation('sigmoid'))
 
     start = time.time()
-    model.compile(loss='binary_crossentropy', 
+    model.compile(loss='binary_crossentropy', optimizer='adam', metr
