@@ -47,4 +47,4 @@ def main():
     start = time.time()
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-    #S
+    #Step 3 Train
