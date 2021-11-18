@@ -48,3 +48,4 @@ def main():
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
     #Step 3 Train the model
+    model.fi
