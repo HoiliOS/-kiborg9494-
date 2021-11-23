@@ -51,3 +51,4 @@ def main():
     model.fit(
         X_train,
         y_train,
+        batc
