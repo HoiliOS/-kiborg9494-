@@ -50,4 +50,4 @@ def main():
     #Step 3 Train the model
     model.fit(
         X_train,
-        y_
+        y_train,
