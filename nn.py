@@ -55,3 +55,4 @@ def main():
         epochs=4,
         validation_split=0.1)
 
+    print model.pred
