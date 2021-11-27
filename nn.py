@@ -53,4 +53,5 @@ def main():
         y_train,
         batch_size=4,
         epochs=4,
-        validation_
+        validation_split=0.1)
+
