@@ -52,4 +52,5 @@ def main():
         X_train,
         y_train,
         batch_size=4,
-        epochs=4
+        epochs=4,
+        v
