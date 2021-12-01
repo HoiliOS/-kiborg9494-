@@ -56,4 +56,4 @@ def main():
         validation_split=0.1)
 
     print model.predict(X_train)
-    print mo
+    print model.evaluate(X_
