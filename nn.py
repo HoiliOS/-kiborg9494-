@@ -55,4 +55,5 @@ def main():
         epochs=4,
         validation_split=0.1)
 
-    print model.predict(X_train
+    print model.predict(X_train)
+    print mo
