@@ -58,4 +58,4 @@ def main():
     print model.predict(X_train)
     print model.evaluate(X_train, y_train)
 
-if  __name__ =
+if  __name__ == '__main__':
