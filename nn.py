@@ -56,4 +56,6 @@ def main():
         validation_split=0.1)
 
     print model.predict(X_train)
-    print model.evaluate(X_train, y_train
+    print model.evaluate(X_train, y_train)
+
+if  __name__ =
