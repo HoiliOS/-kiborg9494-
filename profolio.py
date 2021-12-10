@@ -1,1 +1,1 @@
-from sklearn impor
+from sklearn import preprocessing
