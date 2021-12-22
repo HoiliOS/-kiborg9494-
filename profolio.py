@@ -6,4 +6,4 @@ import matplotlib.pyplot as plt
 import util
 import classifier
 
-ETFs = ['XLE', 'XLU', 
+ETFs = ['XLE', 'XLU', 'XLK', 'XLB', 
