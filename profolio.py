@@ -10,4 +10,4 @@ ETFs = ['XLE', 'XLU', 'XLK', 'XLB', 'XLP', 'XLY', 'XLI', 'XLV', 'SPY']
 
 class Profolio:
 
-    def __in
+    def __init__(se
