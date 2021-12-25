@@ -8,4 +8,4 @@ import classifier
 
 ETFs = ['XLE', 'XLU', 'XLK', 'XLB', 'XLP', 'XLY', 'XLI', 'XLV', 'SPY']
 
-clas
+class Profolio:
