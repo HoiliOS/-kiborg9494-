@@ -12,4 +12,4 @@ class Profolio:
 
     def __init__(self, name):
         self.name = name
-        self
+        self.profits = num
