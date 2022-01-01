@@ -15,4 +15,4 @@ class Profolio:
         self.profits = numpy.zeros(252)
 
     def accProfits(self):
-    
+        return n
