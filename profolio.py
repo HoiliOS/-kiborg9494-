@@ -14,4 +14,4 @@ class Profolio:
         self.name = name
         self.profits = numpy.zeros(252)
 
-    def a
+    def accProfits(
