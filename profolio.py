@@ -12,4 +12,6 @@ class Profolio:
 
     def __init__(self, name):
         self.name = name
-        self.profits = numpy.zeros(2
+        self.profits = numpy.zeros(252)
+
+    def a
