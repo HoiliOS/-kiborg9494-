@@ -17,4 +17,4 @@ class Profolio:
     def accProfits(self):
         return numpy.cumsum(self.profits)
 
-    
+    def annualSh
