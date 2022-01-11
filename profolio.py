@@ -18,4 +18,4 @@ class Profolio:
         return numpy.cumsum(self.profits)
 
     def annualSharpeRatio(self, n = 252):
-        return numpy
+        return numpy.sqrt(n) * self.profi
