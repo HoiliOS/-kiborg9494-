@@ -18,4 +18,6 @@ class Profolio:
         return numpy.cumsum(self.profits)
 
     def annualSharpeRatio(self, n = 252):
-        return numpy.sqrt(n) * self.profits.mean() / self.profits.std(
+        return numpy.sqrt(n) * self.profits.mean() / self.profits.std()
+
+def smar
