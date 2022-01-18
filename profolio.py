@@ -21,3 +21,4 @@ class Profolio:
         return numpy.sqrt(n) * self.profits.mean() / self.profits.std()
 
 def smart_trade(etf, method, delta):
+    parameters = 
