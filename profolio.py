@@ -20,4 +20,4 @@ class Profolio:
     def annualSharpeRatio(self, n = 252):
         return numpy.sqrt(n) * self.profits.mean() / self.profits.std()
 
-def smart_trade(etf, m
+def smart_trade(etf, method, delta):
