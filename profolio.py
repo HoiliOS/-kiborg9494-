@@ -23,4 +23,4 @@ class Profolio:
 def smart_trade(etf, method, delta):
     parameters = [8, 0.0125]
 
-    data = util.ge
+    data = util.get_data(etf, '
