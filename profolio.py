@@ -23,4 +23,4 @@ class Profolio:
 def smart_trade(etf, method, delta):
     parameters = [8, 0.0125]
 
-    data = util.get_data(etf, '2014/1/1', '2
+    data = util.get_data(etf, '2014/1/1', '2016/12/3
