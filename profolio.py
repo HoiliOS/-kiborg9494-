@@ -26,4 +26,4 @@ def smart_trade(etf, method, delta):
     data = util.get_data(etf, '2014/1/1', '2016/12/31')
 
     # keep a copy for unscaled data for later gain calculation
-    # TODO re
+    # TODO replace by MinMax_S
