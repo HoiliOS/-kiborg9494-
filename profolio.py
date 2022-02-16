@@ -29,4 +29,4 @@ def smart_trade(etf, method, delta):
     # TODO replace by MinMax_Scaler.inverse_transform()
     #
     # the first day of test is 2015/12/31. Using this data on this day to predict
-    # Up/
+    # Up/Down of 2016
