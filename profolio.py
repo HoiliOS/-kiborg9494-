@@ -30,4 +30,4 @@ def smart_trade(etf, method, delta):
     #
     # the first day of test is 2015/12/31. Using this data on this day to predict
     # Up/Down of 2016/01/04
-    test = data[data.index > datetime.datetime(20
+    test = data[data.index > datetime.datetime(2015,12,3
