@@ -32,4 +32,5 @@ def smart_trade(etf, method, delta):
     # Up/Down of 2016/01/04
     test = data[data.index > datetime.datetime(2015,12,30)]
 
-    le = preprocessing.Lab
+    le = preprocessing.LabelEncoder()
+  
