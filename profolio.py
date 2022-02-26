@@ -34,4 +34,4 @@ def smart_trade(etf, method, delta):
 
     le = preprocessing.LabelEncoder()
     test['UpDown'] = (test['Close'] - test['Open']) / test['Open']
-  
+    threshold 
