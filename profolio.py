@@ -36,4 +36,5 @@ def smart_trade(etf, method, delta):
     test['UpDown'] = (test['Close'] - test['Open']) / test['Open']
     threshold = 0.000
     test.UpDown[test.UpDown >= threshold] = 'Up'
-    test.UpDown[test.UpDown < threshold] = 
+    test.UpDown[test.UpDown < threshold] = 'Down'
+    test.Up
