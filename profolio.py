@@ -38,4 +38,4 @@ def smart_trade(etf, method, delta):
     test.UpDown[test.UpDown >= threshold] = 'Up'
     test.UpDown[test.UpDown < threshold] = 'Down'
     test.UpDown = le.fit(test.UpDown).transform(test.UpDown)
-    test
+    test.UpDown = test.Up
