@@ -40,4 +40,4 @@ def smart_trade(etf, method, delta):
     test.UpDown = le.fit(test.UpDown).transform(test.UpDown)
     test.UpDown = test.UpDown.shift(-1) # shift 1, so the y is actually next day's up/down
 
-    dataMo
+    dataMod = util.applyFea
