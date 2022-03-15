@@ -41,4 +41,4 @@ def smart_trade(etf, method, delta):
     test.UpDown = test.UpDown.shift(-1) # shift 1, so the y is actually next day's up/down
 
     dataMod = util.applyFeatures(data, range(1, delta))
-   
+    dataMod = uti
