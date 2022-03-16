@@ -43,3 +43,4 @@ def smart_trade(etf, method, delta):
     dataMod = util.applyFeatures(data, range(1, delta))
     dataMod = util.preprocessData(dataMod)
 
+    tr = data
