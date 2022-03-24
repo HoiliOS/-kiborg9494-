@@ -44,4 +44,5 @@ def smart_trade(etf, method, delta):
     dataMod = util.preprocessData(dataMod)
 
     tr = dataMod[dataMod.index <= datetime.datetime(2015,12,30)]
-    #tr = dataMod[dataMod.index <= datetime.datetime(2016
+    #tr = dataMod[dataMod.index <= datetime.datetime(2016,06,30)]
+    te = d
