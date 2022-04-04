@@ -47,4 +47,4 @@ def smart_trade(etf, method, delta):
     #tr = dataMod[dataMod.index <= datetime.datetime(2016,06,30)]
     te = dataMod[dataMod.index > datetime.datetime(2015,12,30)]
     te = te[te.columns[0:-1]] # remove Up/Down label from testing
-    cl
+    clf = classifie
