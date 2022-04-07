@@ -49,4 +49,4 @@ def smart_trade(etf, method, delta):
     te = te[te.columns[0:-1]] # remove Up/Down label from testing
     clf = classifier.buildModel(tr, method, parameters)
 
- 
+    if method
