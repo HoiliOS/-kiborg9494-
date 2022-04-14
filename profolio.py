@@ -50,3 +50,4 @@ def smart_trade(etf, method, delta):
     clf = classifier.buildModel(tr, method, parameters)
 
     if method == 'RNN':
+      
