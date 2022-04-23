@@ -50,4 +50,4 @@ def smart_trade(etf, method, delta):
     clf = classifier.buildModel(tr, method, parameters)
 
     if method == 'RNN':
-        te = numpy.reshape(numpy.array(te)
+        te = numpy.reshape(numpy.array(te), (te.shape[0
