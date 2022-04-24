@@ -53,3 +53,5 @@ def smart_trade(etf, method, delta):
         te = numpy.reshape(numpy.array(te), (te.shape[0], 1, te.shape[1]))
 
     pred = clf.predict(te)
+
+    profits
