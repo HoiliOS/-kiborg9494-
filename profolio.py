@@ -52,4 +52,4 @@ def smart_trade(etf, method, delta):
     if method == 'RNN':
         te = numpy.reshape(numpy.array(te), (te.shape[0], 1, te.shape[1]))
 
-    pred = clf.pr
+    pred = clf.predict(te)
