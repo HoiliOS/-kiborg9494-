@@ -55,4 +55,4 @@ def smart_trade(etf, method, delta):
     pred = clf.predict(te)
 
     profits = numpy.zeros(pred.size)
-    for i in r
+    for i in range(pre
