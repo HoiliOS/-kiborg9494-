@@ -57,4 +57,4 @@ def smart_trade(etf, method, delta):
     profits = numpy.zeros(pred.size)
     for i in range(pred.size):
       if pred[i] < 0.5: # predict long
-        p = (test.Close[i+1] - test.
+        p = (test.Close[i+1] - test.Open[i+1]) / t
