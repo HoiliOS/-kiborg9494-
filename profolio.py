@@ -61,4 +61,4 @@ def smart_trade(etf, method, delta):
       else: # predict short
         p = -(test.Close[i+1] - test.Open[i+1]) / test.Open[i+1]
       profits[i] = p
-    r
+    return profits
