@@ -64,4 +64,5 @@ def smart_trade(etf, method, delta):
     return profits
 
 def compareMethods():
- 
+    """
+    Run 
