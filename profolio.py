@@ -65,4 +65,4 @@ def smart_trade(etf, method, delta):
 
 def compareMethods():
     """
-    Run all four me
+    Run all four methods to compare
