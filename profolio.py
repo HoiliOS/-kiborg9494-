@@ -66,4 +66,5 @@ def smart_trade(etf, method, delta):
 def compareMethods():
     """
     Run all four methods to compare performance
-  
+    """
+    legend =
