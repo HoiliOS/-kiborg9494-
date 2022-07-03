@@ -68,4 +68,4 @@ def compareMethods():
     Run all four methods to compare performance
     """
     legend = []
-    sharpeRat
+    sharpeRatio = []
