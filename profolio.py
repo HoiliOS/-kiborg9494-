@@ -69,3 +69,4 @@ def compareMethods():
     """
     legend = []
     sharpeRatio = []
+    methods = ['S
