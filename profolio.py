@@ -69,4 +69,5 @@ def compareMethods():
     """
     legend = []
     sharpeRatio = []
-    methods = ['SVM', 'RF', 'KN
+    methods = ['SVM', 'RF', 'KNN', 'RNN']
+    be
