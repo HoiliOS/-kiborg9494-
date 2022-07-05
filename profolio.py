@@ -70,4 +70,4 @@ def compareMethods():
     legend = []
     sharpeRatio = []
     methods = ['SVM', 'RF', 'KNN', 'RNN']
-    be
+    best_delta = [4, 3,
