@@ -71,4 +71,6 @@ def compareMethods():
     sharpeRatio = []
     methods = ['SVM', 'RF', 'KNN', 'RNN']
     best_delta = [4, 3, 99, 20]
-    color = ['r', 'b', '
+    color = ['r', 'b', 'y', 'g']
+
+    fo
