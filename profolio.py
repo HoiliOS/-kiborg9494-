@@ -73,4 +73,5 @@ def compareMethods():
     best_delta = [4, 3, 99, 20]
     color = ['r', 'b', 'y', 'g']
 
-    for i in range(
+    for i in range(len(methods)):
+   
