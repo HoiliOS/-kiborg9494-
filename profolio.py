@@ -74,4 +74,5 @@ def compareMethods():
     color = ['r', 'b', 'y', 'g']
 
     for i in range(len(methods)):
-        name = met
+        name = methods[i]
+      
