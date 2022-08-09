@@ -76,3 +76,4 @@ def compareMethods():
     for i in range(len(methods)):
         name = methods[i]
         delta = best_delta[i]
+        m
