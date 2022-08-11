@@ -77,4 +77,5 @@ def compareMethods():
         name = methods[i]
         delta = best_delta[i]
         my = Profolio(name)
-        for etf in ETFs
+        for etf in ETFs:
+            my.pr
