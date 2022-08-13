@@ -78,4 +78,4 @@ def compareMethods():
         delta = best_delta[i]
         my = Profolio(name)
         for etf in ETFs:
-            my.profits += smart_trad
+            my.profits += smart_trade(etf, name, 
