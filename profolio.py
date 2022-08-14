@@ -79,4 +79,4 @@ def compareMethods():
         my = Profolio(name)
         for etf in ETFs:
             my.profits += smart_trade(etf, name, delta)
-        label, = plt.plot(range(1, 2
+        label, = plt.plot(range(1, 253), my.accP
