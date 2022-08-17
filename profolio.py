@@ -80,4 +80,4 @@ def compareMethods():
         for etf in ETFs:
             my.profits += smart_trade(etf, name, delta)
         label, = plt.plot(range(1, 253), my.accProfits(),
-                color=co
+                color=color[i], la
