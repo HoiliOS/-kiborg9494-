@@ -81,3 +81,4 @@ def compareMethods():
             my.profits += smart_trade(etf, name, delta)
         label, = plt.plot(range(1, 253), my.accProfits(),
                 color=color[i], label=my.name)
+        legen
