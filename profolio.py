@@ -82,4 +82,6 @@ def compareMethods():
         label, = plt.plot(range(1, 253), my.accProfits(),
                 color=color[i], label=my.name)
         legend.append(label)
-        sharpeRatio.append(my.annualSh
+        sharpeRatio.append(my.annualSharpeRatio())
+
+    p
