@@ -86,4 +86,4 @@ def compareMethods():
 
     plt.legend(handles=legend)
     plt.show()
-    pr
+    print sharpeRat
