@@ -84,4 +84,5 @@ def compareMethods():
         legend.append(label)
         sharpeRatio.append(my.annualSharpeRatio())
 
-    plt.legend(handles=lege
+    plt.legend(handles=legend)
+    plt.show
