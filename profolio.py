@@ -86,4 +86,6 @@ def compareMethods():
 
     plt.legend(handles=legend)
     plt.show()
-    print sharpeRat
+    print sharpeRatio
+
+def mai
