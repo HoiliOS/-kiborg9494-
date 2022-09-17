@@ -90,4 +90,6 @@ def compareMethods():
 
 def main():
 
-    le
+    legend = []
+
+  
