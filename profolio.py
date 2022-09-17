@@ -88,4 +88,6 @@ def compareMethods():
     plt.show()
     print sharpeRatio
 
-def mai
+def main():
+
+    le
