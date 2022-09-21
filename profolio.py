@@ -92,4 +92,4 @@ def main():
 
     legend = []
 
-  
+    # p0 = Pr
