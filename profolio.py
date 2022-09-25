@@ -92,4 +92,5 @@ def main():
 
     legend = []
 
-    # p0 = Profolio('All sh
+    # p0 = Profolio('All short-only')
+    #
