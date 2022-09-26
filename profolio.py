@@ -93,4 +93,5 @@ def main():
     legend = []
 
     # p0 = Profolio('All short-only')
-    # for etf in E
+    # for etf in ETFs:
+    
