@@ -94,4 +94,4 @@ def main():
 
     # p0 = Profolio('All short-only')
     # for etf in ETFs:
-    
+    #     data
