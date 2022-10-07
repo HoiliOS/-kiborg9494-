@@ -94,4 +94,4 @@ def main():
 
     # p0 = Profolio('All short-only')
     # for etf in ETFs:
-    #     data = util.get_data(etf, '2
+    #     data = util.get_data(etf, '2016/1/1', '2016/
