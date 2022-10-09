@@ -96,4 +96,4 @@ def main():
     # for etf in ETFs:
     #     data = util.get_data(etf, '2016/1/1', '2016/12/31')
     #     p0.profits -= data.Return
- 
+    # label, = p
