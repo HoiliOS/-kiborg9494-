@@ -98,3 +98,5 @@ def main():
     #     p0.profits -= data.Return
     # label, = plt.plot(range(1, 253), p0.accProfits(), 'y--', label=p0.name)
     # legend.append(label)
+
+    # baseline1
