@@ -99,4 +99,5 @@ def main():
     # label, = plt.plot(range(1, 253), p0.accProfits(), 'y--', label=p0.name)
     # legend.append(label)
 
-    # baseline1 SPY long-
+    # baseline1 SPY long-only
+    p1 
