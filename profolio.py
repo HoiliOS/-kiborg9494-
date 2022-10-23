@@ -100,4 +100,5 @@ def main():
     # legend.append(label)
 
     # baseline1 SPY long-only
-    p1 = Profolio('SPY l
+    p1 = Profolio('SPY long-only')
+   
