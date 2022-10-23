@@ -100,4 +100,4 @@ def main():
     # legend.append(label)
 
     # baseline1 SPY long-only
-    p1 
+    p1 = Profo
