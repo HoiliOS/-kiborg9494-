@@ -101,4 +101,4 @@ def main():
 
     # baseline1 SPY long-only
     p1 = Profolio('SPY long-only')
-    data = util.get_
+    data = util.get_data('SPY', '2
