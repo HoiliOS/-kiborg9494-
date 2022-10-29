@@ -102,4 +102,5 @@ def main():
     # baseline1 SPY long-only
     p1 = Profolio('SPY long-only')
     data = util.get_data('SPY', '2016/1/1', '2016/12/31')
-    p1.profits = data.Ret
+    p1.profits = data.Return * 9
+    la
