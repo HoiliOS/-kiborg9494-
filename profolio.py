@@ -104,4 +104,4 @@ def main():
     data = util.get_data('SPY', '2016/1/1', '2016/12/31')
     p1.profits = data.Return * 9
     label, = plt.plot(range(1, 253), p1.accProfits(), 'b--', label=p1.name)
-  
+    legend.append(la
