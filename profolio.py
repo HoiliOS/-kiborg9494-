@@ -106,4 +106,4 @@ def main():
     label, = plt.plot(range(1, 253), p1.accProfits(), 'b--', label=p1.name)
     legend.append(label)
 
-    # baseline2 A
+    # baseline2 All long-only
