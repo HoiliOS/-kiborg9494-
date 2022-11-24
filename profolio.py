@@ -107,4 +107,4 @@ def main():
     legend.append(label)
 
     # baseline2 All long-only
-    p2 = P
+    p2 = Profolio('Al
