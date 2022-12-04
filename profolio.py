@@ -108,4 +108,5 @@ def main():
 
     # baseline2 All long-only
     p2 = Profolio('All long-only')
-    for etf in ET
+    for etf in ETFs:
+        data
