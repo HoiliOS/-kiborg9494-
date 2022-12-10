@@ -110,4 +110,4 @@ def main():
     p2 = Profolio('All long-only')
     for etf in ETFs:
         data = util.get_data(etf, '2016/1/1', '2016/12/31')
-        p2.
+        p2.profits += 
