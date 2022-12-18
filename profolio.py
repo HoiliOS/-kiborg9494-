@@ -112,4 +112,6 @@ def main():
         data = util.get_data(etf, '2016/1/1', '2016/12/31')
         p2.profits += data.Return
     label, = plt.plot(range(1, 253), p2.accProfits(), 'g--', label=p2.name)
-    legend.append
+    legend.append(label)
+
+    # My
