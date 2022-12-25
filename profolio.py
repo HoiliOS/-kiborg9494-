@@ -114,4 +114,5 @@ def main():
     label, = plt.plot(range(1, 253), p2.accProfits(), 'g--', label=p2.name)
     legend.append(label)
 
-    # My strateg
+    # My strategy
+    my =
