@@ -115,4 +115,4 @@ def main():
     legend.append(label)
 
     # My strategy
-    my = Profolio(
+    my = Profolio('My strateg
