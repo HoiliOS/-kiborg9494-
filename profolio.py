@@ -116,4 +116,5 @@ def main():
 
     # My strategy
     my = Profolio('My strategy')
-    my.profits = numpy.ze
+    my.profits = numpy.zeros(252)
+   
