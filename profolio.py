@@ -117,4 +117,5 @@ def main():
     # My strategy
     my = Profolio('My strategy')
     my.profits = numpy.zeros(252)
-    for etf in ETFs
+    for etf in ETFs:
+        my.prof
