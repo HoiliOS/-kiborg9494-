@@ -118,4 +118,4 @@ def main():
     my = Profolio('My strategy')
     my.profits = numpy.zeros(252)
     for etf in ETFs:
-        my.profits += smart_t
+        my.profits += smart_trade(etf, 'SV
