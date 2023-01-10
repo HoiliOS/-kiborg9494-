@@ -119,4 +119,4 @@ def main():
     my.profits = numpy.zeros(252)
     for etf in ETFs:
         my.profits += smart_trade(etf, 'SVM', 4)
-    label, = plt.plot(range(1, 253), my.accProfits(), 'r--', 
+    label, = plt.plot(range(1, 253), my.accProfits(), 'r--', label=my.na
