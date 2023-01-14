@@ -120,4 +120,4 @@ def main():
     for etf in ETFs:
         my.profits += smart_trade(etf, 'SVM', 4)
     label, = plt.plot(range(1, 253), my.accProfits(), 'r--', label=my.name)
-    legend.a
+    legend.append(lab
