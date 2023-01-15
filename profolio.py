@@ -122,4 +122,4 @@ def main():
     label, = plt.plot(range(1, 253), my.accProfits(), 'r--', label=my.name)
     legend.append(label)
 
-    plt.le
+    plt.legend(handles=l
