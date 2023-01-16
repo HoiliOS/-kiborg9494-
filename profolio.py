@@ -123,4 +123,6 @@ def main():
     legend.append(label)
 
     plt.legend(handles=legend)
-    p
+    plt.show()
+
+   
