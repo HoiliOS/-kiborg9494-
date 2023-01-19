@@ -125,4 +125,4 @@ def main():
     plt.legend(handles=legend)
     plt.show()
 
-    print p1.annualSharpeRatio(), p2.ann
+    print p1.annualSharpeRatio(), p2.annualSharpeRa
