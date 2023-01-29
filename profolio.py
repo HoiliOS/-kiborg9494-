@@ -127,4 +127,4 @@ def main():
 
     print p1.annualSharpeRatio(), p2.annualSharpeRatio(), my.annualSharpeRatio()
 
-if __name__ =
+if __name__ == '__main_
