@@ -126,3 +126,5 @@ def main():
     plt.show()
 
     print p1.annualSharpeRatio(), p2.annualSharpeRatio(), my.annualSharpeRatio()
+
+if __name__ =
