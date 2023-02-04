@@ -22,3 +22,13 @@ This is tuned by a series of cross validation process. Following is the best `de
 |SVM | Rand Forest | kNN | Recurrent NN |
 | --- | --- | --- | -- |
 | 4 | 3 | 99 | 20 |
+
+For example, the best `delta` for random forest is 3, while for kNN is 99. The best `delta` gives a hint that random forest is a decision tree and will suffer in high dimension problem, while kNN needs more dimension of data to learn.
+
+* RNN is tested only 4, 10, and 20 due to the running time issue.
+
+![](svm-fs.png)
+
+After the best `delta` is defined, we need to find the best parameters set. This is especially important for SVM. The best parameter set for SVM is `c=8, g=0.0125` with accuracy ~= 71%.
+
+## Cross validation
