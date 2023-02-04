@@ -32,3 +32,16 @@ For example, the best `delta` for random forest is 3, while for kNN is 99. The b
 After the best `delta` is defined, we need to find the best parameters set. This is especially important for SVM. The best parameter set for SVM is `c=8, g=0.0125` with accuracy ~= 71%.
 
 ## Cross validation
+
+Cross validation is done with the dataset from 2014/1/1 to 2015/12/31. 10 fold cross validation is used in this study. Because the data is time series, training data is split based on time point instead of random sampling. The cross validation process will be: train on fold 1, test on 2; train on fold 1-2, test on 3; train on fold 1-2-3, test on 4, and so on.
+
+## Implementaion detail of recurrent neural network
+The RNN is implemented with Google Tensorflow and Keras library.
+It's composed by two layer of LSTM (long short term memory). As previous price would effect future price, I rely on LSTM to learn both long term effect and short term effect. A dropout 0.2 is added after each LSTM in order to prevent overfitting.
+Finally a layer of sigmoid function to aggregate the final classification result.
+
+Number of neuron, number of layers, even the dropout rate are worth to fine tuning. However, due to my hardware limitation, I only pick a reasonable number in this work. This may be the reason that my RNN isn't working well.
+
+Following is the snippet of my RNN setup:
+```python
+    model = Sequential()
