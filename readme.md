@@ -45,3 +45,20 @@ Number of neuron, number of layers, even the dropout rate are worth to fine tuni
 Following is the snippet of my RNN setup:
 ```python
     model = Sequential()
+
+    model.add(LSTM(
+        128,
+        input_shape=(None, X_train.shape[2]),
+        return_sequences=True))
+    model.add(Dropout(0.2))
+
+    model.add(LSTM(
+        100,
+        return_sequences=False))
+    model.add(Dropout(0.2))
+
+    model.add(Dense(
+        units=1))
+    model.add(Activation('sigmoid'))
+
+    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
