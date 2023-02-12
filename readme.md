@@ -74,3 +74,20 @@ Following is the snippet of my RNN setup:
 ## Other implementation detail
 The data is downloaded via `pandas datareader` package.
 SVM, rand. forest, and kNN is provided in `sklearn` package.
+
+# Evaluation
+Following is my result comparing with the other three baseline strategies.
+
+![](result1.png)
+
+Sharpe ratio
+
+| SPY long-only | All long-only | My strategy |
+|----|----|-----|
+|1.55713240229 | 1.93782084967 | 1.01931178478 |
+
+Red lines is my strategy, using SVM as the predictor to predict the next day Up/Down.
+
+## Compare four studied methods
+
+Among four methods I study, following is the gain-and-loss ratio for each of them. Though kNN seems perform best, its Sharpe ratio isn't.
