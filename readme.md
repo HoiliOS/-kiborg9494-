@@ -102,3 +102,17 @@ Among four methods I study, following is the gain-and-loss ratio for each of the
 Likely yes. As the SVM strategy provides good result in the first 35 days. To make the tail part raise, two potential strategies can be adopt:
 1. Include more recent data
 2. Hybrid methods, like using kNN in later part of prediction
+
+I attempted method 1, but don't get significant change in curve. I suspect that I need to re-train all model: including `delta` and `cost and gammar`.
+
+Method 2 is suspicious, because we know kNN performs well only after we try the *out-sample testing*. A reinforcement learning method may adaptive select the best model at each time point to maximize the profit.
+
+# Conclusion and Future work
+
+With limited time, many interesting idea cannot be realized and I hope that I can keep work on this with a full-time position.
+Following are my idea of improvement:
+1. Include market sentiment in prediction. I googled and found many effort working on using news of social media as extra source to improve the stock price prediction. Actually, price is changed more with crowd's general acknowledgement.
+2. Using wavelet as feature. For example, Chandar [2] uses wavelet in neural network to predict stock. As wavelet is a better description of long term history change, I believe this would help.
+3. Fine tune RNN. Neural network is complex system. More complex when LSTM provides feedback to previous layers. I believe that RNN should work best, but I didn't find the optimized setting yet.
+
+# Reference
