@@ -91,3 +91,14 @@ Red lines is my strategy, using SVM as the predictor to predict the next day Up/
 ## Compare four studied methods
 
 Among four methods I study, following is the gain-and-loss ratio for each of them. Though kNN seems perform best, its Sharpe ratio isn't.
+
+![](result2.png)
+
+|SVM | Rand Forest | kNN | Recurrent NN |
+| --- | --- | --- | -- |
+|1.0193117847799729| -0.92876389213784849| 0.99001496191438487| 0.04404309221899539|
+
+## Can we further improve this?
+Likely yes. As the SVM strategy provides good result in the first 35 days. To make the tail part raise, two potential strategies can be adopt:
+1. Include more recent data
+2. Hybrid methods, like using kNN in later part of prediction
