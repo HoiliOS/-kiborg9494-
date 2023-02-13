@@ -116,3 +116,6 @@ Following are my idea of improvement:
 3. Fine tune RNN. Neural network is complex system. More complex when LSTM provides feedback to previous layers. I believe that RNN should work best, but I didn't find the optimized setting yet.
 
 # Reference
+[1]: [Efficient Market Hypothesis: Is The Stock Market Efficient?](http://www.investopedia.com/articles/basics/04/022004.asp/)
+
+[2]: Chandar, S. Kumar, M. Sumathi, and S. N. Sivanandam. "Prediction of stock market price using hybrid of wavelet transform and artificial neural network." Indian Journal of Science and Technology 9.8 (2016).
