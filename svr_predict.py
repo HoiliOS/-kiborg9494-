@@ -24,3 +24,18 @@ class SVR_Solver:
 
         dates = range(1, len(self.prices)+1)
         self.dates = np.reshape(dates, (len(dates), 1))
+
+        cutpoint = len(self.prices)/10
+
+        self.train_date = self.dates[cutpoint+1:]
+        self.train_price = self.prices[cutpoint+1:]
+
+        self.test_date = self.dates[:cutpoint]
+        self.test_price = self.prices[:cutpoint]
+
+    def training(self, c, g):
+
+        self.model = SVR(kernel= 'rbf', C= c, gamma= g)
+        self.model.fit(self.train_date, self.train_price) # fitting the data points in the models
+
+    def tune_parameter(self, c_range, g_range):
