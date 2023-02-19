@@ -49,3 +49,12 @@ class SVR_Solver:
                 if mse < best[2]:
                     best = (c, g, mse)
                 print c, g, mse
+        print best
+
+    def MSE(self, pred, real):
+        return sum([(p - r) ** 2 for p, r in zip(pred, real)]) / len(pred)
+
+    def draw(self):
+
+        plt.scatter(self.dates, self.prices, color= 'black', label= 'Data')
+        plt.plot(self.dates, self.model.predict(self.dates), color= 'red', label= 'RBF model')
