@@ -39,3 +39,13 @@ class SVR_Solver:
         self.model.fit(self.train_date, self.train_price) # fitting the data points in the models
 
     def tune_parameter(self, c_range, g_range):
+
+        best = (None, None, 9999999)
+        for c in xrange(c_range[0], c_range[1]+1):
+            for g in xrange(g_range[0], g_range[1]+1):
+                self.training(2**c, 2**g)
+                pred = self.predict(self.test_date)
+                mse = self.MSE(pred, self.prices)
+                if mse < best[2]:
+                    best = (c, g, mse)
+                print c, g, mse
