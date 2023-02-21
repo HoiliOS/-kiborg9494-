@@ -65,3 +65,14 @@ class SVR_Solver:
         plt.show()
 
     def predict(self, x):
+        return self.model.predict(x)
+
+def main():
+    solver = SVR_Solver()
+    solver.get_data(sys.argv[1])
+    solver.tune_parameter([-5, 2], [-15, 1])
+    #solver.training(1e3, 0.1)
+    #solver.draw()
+    #print solver.predict_price(505)
+
+if __name__ == '__main__':
