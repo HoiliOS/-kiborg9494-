@@ -58,3 +58,10 @@ class SVR_Solver:
 
         plt.scatter(self.dates, self.prices, color= 'black', label= 'Data')
         plt.plot(self.dates, self.model.predict(self.dates), color= 'red', label= 'RBF model')
+        plt.xlabel('Date')
+        plt.ylabel('Price')
+        plt.title('SVR test for SPY trimmed data (2014, 2015)')
+        #plt.legend()
+        plt.show()
+
+    def predict(self, x):
