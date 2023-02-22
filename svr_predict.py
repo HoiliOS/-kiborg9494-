@@ -76,3 +76,4 @@ def main():
     #print solver.predict_price(505)
 
 if __name__ == '__main__':
+    main()
