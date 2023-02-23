@@ -27,3 +27,18 @@ def preprocessData(dataset):
     return dataset
 
 def count_missing(dataframe):
+    return (dataframe.shape[0] * dataframe.shape[1]) - dataframe.count().sum()
+
+def performCV(X_train, y_train, folds, method, parameters, savemodel):
+    """
+    given complete dataframe, number of folds, the % split to generate
+    train and test set and features to perform prediction --> splits
+    dataframein test and train set. Takes train set and splits in k folds.
+    - Train on fold 1, test on 2
+    - Train on fold 1-2, test on 3
+    - Train on fold 1-2-3, test on 4
+    ....
+    returns mean of test accuracies
+    """
+    print ''
+    print 'Parameters --------------------------------> ', parameters
