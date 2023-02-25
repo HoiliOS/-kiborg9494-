@@ -42,3 +42,15 @@ def performCV(X_train, y_train, folds, method, parameters, savemodel):
     """
     print ''
     print 'Parameters --------------------------------> ', parameters
+    print 'Size train set: ', X_train.shape
+
+    k = int(np.floor(float(X_train.shape[0])/folds))
+
+    print 'Size of each fold: ', k
+
+    acc = np.zeros(folds-1)
+    for i in range(2, folds+1):
+        print ''
+        split = float(i-1)/i
+        print 'Splitting the first ' + str(i) + ' chuncks at ' + str(i-1) + '/' + str(i)
+        data = X_train[:(k*i)]
