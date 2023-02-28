@@ -70,3 +70,18 @@ def performCV(X_train, y_train, folds, method, parameters, savemodel):
 
 def performTimeSeriesSearchGrid(X_train, y_train, folds, method, grid, savemodel):
     """
+    parameters is a dictionary with: keys --> parameter , values --> list of values of parameter
+    """
+    print ''
+    print 'Performing Search Grid CV...'
+    print 'Algorithm: ', method
+    param = grid.keys()
+    finalGrid = {}
+    if len(param) == 1:
+        for value_0 in grid[param[0]]:
+            parameters = [value_0]
+            accuracy = performCV(X_train, y_train, folds, method, parameters, savemodel)
+            finalGrid[accuracy] = parameters
+        final = sorted(finalGrid.iteritems(), key=operator.itemgetter(0), reverse=True)
+        print ''
+        print finalGrid
