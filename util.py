@@ -54,3 +54,19 @@ def performCV(X_train, y_train, folds, method, parameters, savemodel):
         split = float(i-1)/i
         print 'Splitting the first ' + str(i) + ' chuncks at ' + str(i-1) + '/' + str(i)
         data = X_train[:(k*i)]
+        output = y_train[:(k*i)]
+        print 'Size of train+test: ', data.shape
+        index = int(np.floor(data.shape[0]*split))
+        X_tr = data[:index]
+        y_tr = output[:index]
+
+        X_te = data[(index+1):]
+        y_te = output[(index+1):]
+
+        acc[i-2] = classifier.performClassification(X_tr, y_tr, X_te, y_te, method, parameters, savemodel)
+        print 'Accuracy on fold ' + str(i) + ': ', acc[i-2]
+
+    return acc.mean()
+
+def performTimeSeriesSearchGrid(X_train, y_train, folds, method, grid, savemodel):
+    """
