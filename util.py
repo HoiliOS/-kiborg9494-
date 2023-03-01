@@ -85,3 +85,16 @@ def performTimeSeriesSearchGrid(X_train, y_train, folds, method, grid, savemodel
         final = sorted(finalGrid.iteritems(), key=operator.itemgetter(0), reverse=True)
         print ''
         print finalGrid
+        print ''
+        print 'Final CV Results: ', final
+        return final[0]
+
+    elif len(param) == 2:
+        for value_0 in grid[param[0]]:
+            for value_1 in grid[param[1]]:
+                parameters = [value_0, value_1]
+                accuracy = performCV(X_train, y_train, folds, method, parameters, savemodel)
+                finalGrid[accuracy] = parameters
+        final = sorted(finalGrid.iteritems(), key=operator.itemgetter(0), reverse=True)
+        print ''
+        print finalGrid
