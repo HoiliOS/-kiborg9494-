@@ -115,3 +115,23 @@ def performFeatureSelection(stock_name, maxdeltas, start, end, start_test, savem
         print 'Delta days accounted: ', max(delta)
         dataset = applyFeatures(dataset, delta)
         dataset = preprocessData(dataset)
+        print 'Number of NaN: ', count_missing(dataset)
+        X_train, y_train, X_test, y_test  = \
+            classifier.prepareDataForClassification(dataset, start_test)
+
+        print ''
+        accuracy = performCV(X_train, y_train, folds, method, parameters, savemodel)
+        finalGrid[accuracy] = maxdelta
+
+    final = sorted(finalGrid.iteritems(), key=operator.itemgetter(0), reverse=True)
+    print ''
+    print finalGrid
+    print ''
+    print 'Final CV Results: ', final
+    return final[0]
+
+
+def performParameterSelection(stock_name, bestdelta, start, end, start_test, savemodel, method, folds, grid):
+    """
+    """
+    dataset = get_data(stock_name, start, end)
