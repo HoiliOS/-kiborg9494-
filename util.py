@@ -98,3 +98,20 @@ def performTimeSeriesSearchGrid(X_train, y_train, folds, method, grid, savemodel
         final = sorted(finalGrid.iteritems(), key=operator.itemgetter(0), reverse=True)
         print ''
         print finalGrid
+        print ''
+        print 'Final CV Results: ', final
+        return final[0]
+
+def performFeatureSelection(stock_name, maxdeltas, start, end, start_test, savemodel, method, folds, parameters):
+    """
+    """
+    finalGrid = {}
+    print ''
+    print '============================================================='
+    print ''
+    for maxdelta in range(3, maxdeltas, 2):
+        dataset = get_data(stock_name, start, end)
+        delta = range(1, maxdelta)
+        print 'Delta days accounted: ', max(delta)
+        dataset = applyFeatures(dataset, delta)
+        dataset = preprocessData(dataset)
