@@ -160,3 +160,15 @@ def addFeatures(dataframe, close, returns, n):
 
     roll_n = "RolMean" + str(n)
     dataframe[roll_n] = dataframe[returns].rolling(n).mean()
+
+def applyFeatures(dataset, delta):
+    """
+    applies rolling mean and delayed returns to each dataframe in the list
+    """
+    columns = dataset.columns
+    close = columns[-3]
+    returns = columns[-1]
+    for n in delta:
+        addFeatures(dataset, close, returns, n)
+
+    dataset = dataset.drop(dataset.index[0:max(delta)]) #drop NaN due to delta spanning
