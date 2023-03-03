@@ -135,3 +135,13 @@ def performParameterSelection(stock_name, bestdelta, start, end, start_test, sav
     """
     """
     dataset = get_data(stock_name, start, end)
+    delta = range(1, bestdelta + 1)
+    print 'Delta days accounted: ', max(delta)
+    dataset = applyFeatures(dataset, delta)
+    dataset = preprocessData(dataset)
+    X_train, y_train, X_test, y_test  = \
+            classifier.prepareDataForClassification(dataset, start_test)
+
+    return performTimeSeriesSearchGrid(X_train, y_train, folds, method, grid, savemodel)
+
+def addFeatures(dataframe, close, returns, n):
