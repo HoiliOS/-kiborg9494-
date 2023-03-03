@@ -145,3 +145,18 @@ def performParameterSelection(stock_name, bestdelta, start, end, start_test, sav
     return performTimeSeriesSearchGrid(X_train, y_train, folds, method, grid, savemodel)
 
 def addFeatures(dataframe, close, returns, n):
+    """
+    operates on two columns of dataframe:
+    - append previous n days' OHLC and Volumn information
+    - given Return_* computes the return of day i respect to day i-n.
+    - given RolMean_* computes its moving average on n days
+
+    """
+    for c in dataframe.columns[0:5]:
+        dataframe[c + str(n)] = dataframe[c].shift(n)
+
+    return_n = "Return" + str(n)
+    dataframe[return_n] = dataframe[close].pct_change(n)
+
+    roll_n = "RolMean" + str(n)
+    dataframe[roll_n] = dataframe[returns].rolling(n).mean()
