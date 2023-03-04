@@ -172,3 +172,16 @@ def applyFeatures(dataset, delta):
         addFeatures(dataset, close, returns, n)
 
     dataset = dataset.drop(dataset.index[0:max(delta)]) #drop NaN due to delta spanning
+
+    # normalize columns
+    scaler = preprocessing.MinMaxScaler()
+    return pd.DataFrame(scaler.fit_transform(dataset),\
+            columns=dataset.columns, index=dataset.index)
+
+
+def get_data(name, start, end):
+    data = web.get_data_yahoo(name, start, end)
+    del data['Adj Close'] # we don't need Adj Close
+    data['Return'] = (data['Close'] - data['Open']) / data['Open']
+
+    return data
